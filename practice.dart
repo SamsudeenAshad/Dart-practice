@@ -1,53 +1,51 @@
-void (main)
+void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
 
-List <int> numbers = [1,2,3,4,5]
-
-for (int i in number) {
+  for (int i in numbers) {
 	print(i);
+  }
+
+  String result = greet();
+
+  print(result);
+
+  print(greet());
+
+  int age = displayAge(20);
+  print("my age is $age");
+
+  Map<String, dynamic> person = {
+	"name": "tom",
+	"age": 25,
+	"isMale": true
+  };
+
+  print(person);
+  print(person["name"]);
+  print(person["age"]);
+  print(person["isMale"]);
+
+  Map<String, dynamic> user = {
+	"name": "tom",
+	"age": 25,
+	"isMale": true
+  };
+
+  print(user);
 }
 
-String result = greet();
+String greet() => "hello world";
 
-print(result);
+int displayAge(int age) => age;
 
-print(greet())
+class User {
+  late int age;
+  late String name;
 
-int age = displayAge(20);
-print("my age is $age");
-
+  User(int a, String n) {
+	this.age = a;
+	this.name = n;
+  }
 }
 
-String greet()=> "hello world";
-
-int displayAge (int age) => age;
-
-Map<String, Daynamic> person = {
-	" name" : "tom",
-	"age" :25
-    "isMale" : true
-};
-
-print(person);
-print (person["name"]);
-print (person["age"]);
-print (person["isMale"]);
-
-converToString()=>
-
-user = {
-	"name" : "tom",
-	"age" : 25,
-	"isMale" : true
-};
-
-Class User {
-	Ilate int age;
-	Iate String name;
-
-	user(int a, int n){
-		this.age = a;
-		this.name = n;
-	}
-}
-
-void login
+void login() {}
