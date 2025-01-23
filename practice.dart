@@ -27,4 +27,7 @@ Map<String, Daynamic> person = {
     "isMale" : true
 };
 
-print(person )
+print(person);
+print (person["name"]);
+print (person["age"]);
+print (person["isMale"]);
