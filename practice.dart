@@ -33,3 +33,21 @@ print (person["age"]);
 print (person["isMale"]);
 
 converToString()=>
+
+user = {
+	"name" : "tom",
+	"age" : 25,
+	"isMale" : true
+};
+
+Class User {
+	Ilate int age;
+	Iate String name;
+
+	user(int a, int n){
+		this.age = a;
+		this.name = n;
+	}
+}
+
+void login
